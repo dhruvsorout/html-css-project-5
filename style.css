@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: #fff;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+img{
+    cursor: pointer;
+}
+nav{
+    padding: 1%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+nav ul li{
+    font-size: 1rem;
+} 
+.home-option{
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #6464e0;
+}
+.intro{
+    max-width: 100vw;
+    margin: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.intro-line-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+.intro-line-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.intro-line-2 h1{
+    font-size: 3rem;
+}
+.intro-line-2 h3{
+    font-size: 1.65rem;
+    color: rgb(197, 197, 89);
+}
+.projects{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-heading{
+    font-size: 1.6rem;
+}
+.horizontal-divider{
+    height: 10px;
+    width: 134px;
+    background-color: #0000ff;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 30px 50px;
+    gap: 15px;
+}
+.contact div h1{
+    font-size: 1.6rem;
+}
+.horizontal-divider-contact{
+    height: 10px;
+    width: 131px;
+    background-color: #0000ff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.project p{
+    font-size: 20px;
+}
+img[alt='social']{
+    width: 30px;
+}
+img[alt='menu']{
+    width: 20px;
+    display: none;
+}
+img[alt='hello']{
+    height: 40px;
+}
+img[alt='pc-img']{
+    width: 30vw;
+    height: 40vh;
+}
+img[alt="project-img"]{
+    width: 20vw;
+}
+@media screen and (max-width: 576px){
+    nav ul{
+        display: none;
+    }
+    img[alt='menu']{
+        display: block;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    img[alt='pc-img']{
+        margin-top: 20px;
+        width: 65vw;
+    }
+    .intro-line-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .intro-line-2 h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .intro-line-2 h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .main-heading{
+        font-size: 1.4rem;
+    }
+    .horizontal-divider{
+        width: 120px;
+    }
+    .projects-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    img[alt='project-img']{
+        width: 40vw;
+    }
+    .contact div h1{
+        font-size: 1.4rem;
+    }
+    .horizontal-divider-contact{
+        width: 118px;
+    }
+    img[alt='social']{
+        width: 25px;
+    }
+}
